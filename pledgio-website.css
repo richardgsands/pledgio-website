@@ -1,0 +1,31 @@
+body {
+	background: url('background.png');
+	background-position: -200px 0;
+}
+
+.section {
+	text-align: center;
+}
+
+.iphone {
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	background: url('iphone.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 600px;
+}
+
+.signup {
+	position: fixed;
+	top: 700px;
+	left: 100px;
+
+}
+
+.text {
+	margin-left: 500px;
+	margin-right: 200px;
+}

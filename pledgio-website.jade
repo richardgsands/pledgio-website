@@ -1,0 +1,26 @@
+head
+	title Pledg.io
+
+body
+	.iphone &nbsp;
+	+main
+	+signup
+
+
+
+template(name="main")
+	#fullpage
+		.section 
+			.text Some section
+		.section
+			.text Some section
+		.section
+			.text Some section
+		.section
+			.text Some section
+
+template(name="signup")
+	form.signup
+		input(name="email", type="email", placeholder="Your email address")
+		button(type="submit") Keep me posted!
+		p {{result}}

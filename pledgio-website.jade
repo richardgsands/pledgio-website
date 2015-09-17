@@ -2,22 +2,19 @@ head
 	title Pledg.io
 
 body
-	.iphone &nbsp;
 	+main
 	+signup
 
 
 
 template(name="main")
+	.iphone
+		img(src="{{currentImageUrl}}")
+
 	#fullpage
-		.section 
-			.text Some section
-		.section
-			.text Some section
-		.section
-			.text Some section
-		.section
-			.text Some section
+		each screens
+			.section 
+				.text {{caption}}
 
 template(name="signup")
 	form.signup

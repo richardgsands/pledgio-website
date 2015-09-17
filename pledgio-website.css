@@ -17,6 +17,12 @@ body {
 	width: 400px;
 	height: 600px;
 }
+.iphone img {
+  width: 241px;
+  left: 35px;
+  position: absolute;
+  top: 87px;
+}
 
 .signup {
 	position: fixed;

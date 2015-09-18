@@ -1,5 +1,6 @@
 head
 	title Pledg.io
+	link(rel="stylesheet", type="text/css", href="/fonts/quicksand.css")
 
 body
 	+main
@@ -13,8 +14,8 @@ template(name="main")
 
 	#fullpage
 		each screens
-			.section 
-				.text {{caption}}
+			.section(style="background-color: {{colour}}")
+				.text(style="color: {{textColour}}") {{caption}}
 
 template(name="signup")
 	form.signup

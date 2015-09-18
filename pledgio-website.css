@@ -1,6 +1,7 @@
 body {
 	background: url('background.png');
 	background-position: -200px 0;
+	font-family: 'quicksandbold';
 }
 
 .section {
@@ -9,6 +10,7 @@ body {
 
 .iphone {
 	position: fixed;
+	z-index: 1;
 	top: 100px;
 	left: 100px;
 	background: url('iphone.png');
@@ -34,4 +36,8 @@ body {
 .text {
 	margin-left: 500px;
 	margin-right: 200px;
+
+	font-size: 60px;
+	max-width: 700px;
+	font-color: white;
 }

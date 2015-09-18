@@ -4,19 +4,28 @@ head
 
 body
 	+main
-	+signup
 
 template(name="main")
+	#header
+		img(src="/pledgio-logo.png")
+
 	.iphone
 		img(src="{{currentImageUrl}}")
 
 	#fullpage
 		each screens
-			.section(style="background-color: {{colour}}")
+			.section
 				.text(style="color: {{textColour}}") {{caption}}
+
+	+signup
+
 
 template(name="signup")
 	form.signup
+		div
+			p Pledg.io is coming soon...!
+			div
+				img.coming-soon(src="/comingsoon-iosandandroid.png")
 		div
 			input.input(name="email", type="email", placeholder="Your email address")
 		div

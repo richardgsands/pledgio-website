@@ -4,6 +4,22 @@ body {
 	font-family: 'quicksandbold';
 }
 
+#header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: white;
+	text-align: center;
+}
+
+#header img {
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .section {
 	text-align: center;
 }
@@ -40,7 +56,7 @@ body {
 
 form.signup {
 	position: fixed;
-	bottom: 100px;
+	bottom: 80px;
 	left: 100px;
 	right: 100px;
 	text-align: center;
@@ -70,9 +86,13 @@ form.signup {
 	font-size: 16px;
 }
 
+img.coming-soon {
+	height: 50px;
+}
+
 .signupResult {
 	position: fixed;
-	bottom: 50px;
+	bottom: 30px;
 	left: 50%;
 	transform: translateX(-50%);
 }

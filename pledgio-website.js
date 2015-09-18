@@ -9,44 +9,45 @@ if (Meteor.isClient) {
     {
       image: '9_main.png',
       caption: 'Make a weekly pledg, track it automatically, and donate to charity whenever you slip up...',
-      colour: '#FF0000',
       textColour: 'white'
     },
     {
       image: '4_activity.png',
       caption: 'You can walk, run or cycle',
-      colour: '#000088',
       textColour: 'white'
     },
     {
       image: '5_distance.png',
       caption: 'Choose how far you want to aim for each week',
-      colour: '#e1e1e1',
       textColour: 'black'
     },
     {
       image: '6_donation.png',
       caption: 'Choose how much you want to donate whenever you fail to meet your Pledg',
-      colour: '#FF0000',
-      textColour: 'white'
+      textColour: 'black'
     },
     {
       image: '7_charities.png',
       caption: 'Choose where you want to donate',
-      colour: '#000088',
-      textColour: 'white'
+      textColour: 'black'
     },
     {
       image: '8_connect.png',
       caption: 'Enter payment details, link to your favourite apps and everything happens automatically!',
-      colour: '#e1e1e1',
-      textColour: 'black'
+      textColour: 'white'
     }
 
   ];
 
   Template.main.rendered = function() {
     $('#fullpage').fullpage({
+      // verticalCentered: false,
+      scrollOverflow: false,
+
+      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#4BBFC3', '#7BAABE'],
+      css3: true,
+      scrollingSpeed: 1000,
+
       onLeave: function(index, nextIndex, direction) {
         Session.set('currentIndex', nextIndex-1);
       }

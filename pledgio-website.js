@@ -47,9 +47,9 @@ if (Meteor.isClient) {
 
   Template.main.rendered = function() {
     $('#fullpage').fullpage({
-      // onLeave: function(index, nextIndex, direction) {
-      //   Session.set('currentIndex', nextIndex-1);
-      // }
+      onLeave: function(index, nextIndex, direction) {
+        Session.set('currentIndex', nextIndex-1);
+      }
     });
   }
 
@@ -75,6 +75,8 @@ if (Meteor.isClient) {
   Template.signup.events({
     'submit .signup' : function(event) {
       event.preventDefault();
+
+      if (!event.target.email.value) return;
 
       // TODO: validate email
       var signup = {

@@ -6,8 +6,6 @@ body
 	+main
 	+signup
 
-
-
 template(name="main")
 	.iphone
 		img(src="{{currentImageUrl}}")
@@ -19,6 +17,8 @@ template(name="main")
 
 template(name="signup")
 	form.signup
-		input(name="email", type="email", placeholder="Your email address")
-		button(type="submit") Keep me posted!
-		p {{result}}
+		div
+			input.input(name="email", type="email", placeholder="Your email address")
+		div
+			button.button(type="submit") Keep me posted!
+		p.signupResult {{result}}

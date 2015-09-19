@@ -1,0 +1,127 @@
+body {
+	background: url('background.png');
+	background-position: -200px 0;
+	font-family: 'quicksandbold';
+	-webkit-text-size-adjust: none;
+
+}
+
+#header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: white;
+	text-align: center;
+}
+
+#header img {
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section {
+	text-align: center;
+}
+
+.iphone {
+	position: fixed;
+	z-index: 1;
+	top: 100px;
+	left: 100px;
+	background: url('iphone.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 300px;
+	content: "";
+
+	&:before {
+		// height: 600px;
+		content: "";
+		display: block;
+		margin-top: 200%;
+		// padding-top: 200%;
+	}
+
+	img {
+		position: absolute;
+		width: 77%;
+		left: 11%;
+		top: 14%;
+	}
+
+}
+
+.text {
+	margin-left: 500px;
+	margin-right: 200px;
+
+	font-size: 36px;
+	max-width: 700px;
+	font-color: white;
+
+	margin-bottom: 200px;
+}
+
+
+form.signup {
+	position: fixed;
+	bottom: 30px;
+	left: 100px;
+	right: 100px;
+	text-align: center;
+}
+
+.input, .button {
+	width: 100%;
+	max-width: 300px;	
+	margin-bottom: 10px;	
+	box-sizing: border-box;
+
+	padding: 10px;
+	border-radius: 5px;
+	border: solid 1px white;
+
+}
+
+.input {
+	background: transparent;
+	color: white;
+	font-family: 'quicksandbold';
+	outline-style: none;
+	font-size: 16px;
+}
+
+.button {
+	background: white;
+	font-family: 'quicksandbold';
+	font-size: 16px;
+}
+
+img.coming-soon {
+	height: 50px;
+}
+
+/* Placeholder text color */
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+.signup-mobile {
+	position: fixed;
+	top: calc(vh-30px);
+}

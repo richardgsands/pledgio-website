@@ -4,6 +4,17 @@ if (Meteor.isClient) {
 
   Session.set('currentIndex', 0);
 
+  // var currentIndexAuto = 0;
+  // var autoScroll = setInterval(function() {
+  //   currentIndexAuto += 1;
+  //   if (currentIndexAuto > screens.length-1) {
+  //     currentIndexAuto = 0;
+  //   }
+  //   $.fn.fullpage.moveTo(currentIndexAuto);
+  //   // Session.set('currentIndex', currentIndex);
+  // }, 5000);
+
+
   var screens = [
 
     {
@@ -40,6 +51,7 @@ if (Meteor.isClient) {
   ];
 
   Template.main.rendered = function() {
+
     $('#fullpage').fullpage({
       // verticalCentered: false,
       scrollOverflow: false,
@@ -68,8 +80,8 @@ if (Meteor.isClient) {
   })
 
   Template.signup.helpers({
-    result: function() {
-      return Session.get('result');
+    buttonText: function() {
+      return Session.get('result') || 'Keep me posted!';
     }
   })
 

@@ -1,0 +1,20 @@
+@media(max-width:1000px) {
+	.text {
+		display: none;
+	}
+
+	.iphone {
+		left: 50vw;
+		transform: translateX(-50%);
+	}
+}
+
+@media(max-height:800px) {
+	.signup-desktop {
+		display: none;
+	}
+
+	.signup-mobile {
+		display: block;
+	}
+}

@@ -37,6 +37,8 @@ body {
 	width: 300px;
 	content: "";
 
+	pointer-events: none;
+
 	&:before {
 		// height: 600px;
 		content: "";

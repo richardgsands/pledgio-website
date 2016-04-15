@@ -6,15 +6,34 @@
 	.iphone {
 		left: 50vw;
 		transform: translateX(-50%);
+		width: 200px;
 	}
+
+	.coming-soon {
+		display: none;
+	}
+
 }
 
 @media(max-height:800px) {
 	.signup-desktop {
-		display: none;
+		display: block;
+		position: fixed;
+		z-index: 2;
+		width: 100%;
+
+		.signup {
+			left: 20px;
+			right: 20px;
+		}
+
+		input, button {
+			width: 100%;
+		}
+
 	}
 
 	.signup-mobile {
-		display: block;
+		display: none;
 	}
 }
